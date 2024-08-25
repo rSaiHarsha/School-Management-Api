@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const schoolRoutes = require('./routes/schoolRoutes');
 require('dotenv').config();
 require('./config/db'); // Initialize MySQL connection
@@ -8,6 +9,7 @@ const app = express();
 
 // Middleware
 app.use(bodyParser.json());
+app.use(cors());
 
 // Routes
 app.use('/api/schools', schoolRoutes);
