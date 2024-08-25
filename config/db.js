@@ -26,7 +26,7 @@ db.query(createTableQuery, (err, results) => {
         }
         console.log('Table created or already exists');
     });
-});
+
 
 
 
