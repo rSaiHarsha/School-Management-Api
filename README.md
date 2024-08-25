@@ -32,7 +32,8 @@ This project is an API built with Node.js, Express, and MySQL for managing schoo
 ### 2. List Schools by Proximity
 **Method**: GET
 **Endpoint**: /api/schools/listSchools?latitude=40.7128&longitude=-72.0060
-Query Parameters:
+
+## Query Parameters:
 latitude: User's latitude
 longitude: User's longitude
 sample response: 
