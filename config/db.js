@@ -27,13 +27,6 @@ db.query(createTableQuery, (err, results) => {
         console.log('Table created or already exists');
     });
 });
-db.connect(err => {
-    if (err) {
-        console.error('Database connection failed: ', err);
-        process.exit(1);  // Exit process with failure
-    }
-    console.log('Connected to the MySQL database');
-});
 
 
 
